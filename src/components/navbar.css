@@ -1,0 +1,16 @@
+ul{
+    
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding-left: 20px;
+}
+li:hover{
+    color:red;
+}
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
