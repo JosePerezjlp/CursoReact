@@ -1,16 +1,25 @@
 import './navbar.css'
+import CardWidget from './cardwidget';
 
 const navbar = () => {
-    return (     <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Productos</li>
-                <li>Nosotros</li>
-                <li>Contacto</li>
-            </ul>
-        <hr></hr>    
-        </nav>
-        
+    return (   
+        <div>
+            <nav>
+                <ul>
+                    
+                    <li>Inicio</li>
+                    <li>Productos</li>
+                    <li>Nosotros</li>
+                    <li>Contacto</li>
+                    <li className='carrito'>
+                    <CardWidget></CardWidget>
+                    </li>
+                </ul>
+                
+            <hr></hr>    
+            </nav>
+
+        </div>
     );
 }
 
