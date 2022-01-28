@@ -12,7 +12,7 @@ const navbar = () => {
                     <li>Nosotros</li>
                     <li>Contacto</li>
                     <li className='carrito'>
-                    <CardWidget></CardWidget>
+                    <CardWidget/>
                     </li>
                 </ul>
                 
