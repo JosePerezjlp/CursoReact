@@ -17,3 +17,9 @@ hr{
 .carrito {
     padding-left: 600px;
 }
+
+.cardProducto{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
