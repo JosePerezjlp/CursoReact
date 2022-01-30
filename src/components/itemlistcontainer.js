@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import ItemCount from './itemcount'
 
 
 const itemListContainer = ({producto,img,marca,precio,stock}) => {
@@ -33,8 +34,9 @@ const itemListContainer = ({producto,img,marca,precio,stock}) => {
           Stock: {stock}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Agregar</Button>
+      <CardActions >
+        
+        <ItemCount sx={{display:'flex',justifyContent:'center',alignItems:'center'}}/>
         
       </CardActions>
     </Card>
