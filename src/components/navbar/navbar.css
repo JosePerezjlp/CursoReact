@@ -1,0 +1,25 @@
+ul{
+    
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding-left: 20px;
+}
+li:hover{
+    color:red;
+}
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.carrito {
+    padding-left: 600px;
+}
+
+.cardProducto{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

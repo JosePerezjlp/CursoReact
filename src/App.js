@@ -1,10 +1,10 @@
 
 import './App.css';
-import Navbar from './components/navbar';
-import ItemListContainer from './components/itemlistcontainer';
-import motorola from './components/motorola-g8.jpg'
-import intel from './components/notebook-intel.jpg'
-import genius from './components/parlantes-genius.jpg'
+import Navbar from './components/navbar/navbar';
+import ItemListContainer from './container/itemlistcontainer';
+import motorola from './img/motorola-g8.jpg'
+import intel from './img/notebook-intel.jpg'
+import genius from './img/parlantes-genius.jpg'
 
 
 function App() {
