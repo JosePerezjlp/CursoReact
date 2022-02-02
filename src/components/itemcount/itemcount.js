@@ -1,31 +1,45 @@
 import React,{ useState } from "react"
 import './itemcount.css'
-const ItemCount = () =>{
-    const [stock, setStock] = useState(0);
-    const agregarProducto = ()=>{
-        setStock(stock + 1)
-        
-        if(stock === 10) return (setStock(stock))
 
-    };
-    const restarProducto = ()=>{
-        setStock(stock - 1)
-        if(stock === 0) return (setStock(stock))
-    };
+
+const ItemCount = () =>{
+    const [btnActivo,setBtnActivado] = useState(true)
+    const [counter, setCounter] = useState(0);
     
+    const agregarProducto = ()=>{
+        if(counter < 10) {
+            setCounter(counter + 1)
+        }
+        if(counter === 0){
+            setBtnActivado(false)
+        }
+     }
+        
+    const restarProducto = ()=>{
+        if(counter > 0) {
+            
+            setCounter(counter - 1)
+         }
+        if(counter === 0){
+            setBtnActivado(true)
+        }
+     
+        };
+           
     return(
         <div>
-            <p className="num">{stock}</p>
+            <p>Stock Disponible:10</p>
+            <p className="num">{counter}</p>
             <div className="btns">
             <button onClick={agregarProducto}>Agregar</button>
             <button onClick={restarProducto}>Quitar</button>
             </div>
             <div>
-                <button className="btn">Agregar al Carrito</button>
+                <button disabled={btnActivo}  className="btn">Agregar al Carrito</button>
             </div>
         </div>
     )
-}
+};
 
 
 export default ItemCount
