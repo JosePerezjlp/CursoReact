@@ -13,6 +13,7 @@ const ItemCount = () =>{
         if(counter === 0){
             setBtnActivado(false)
         }
+       
      }
         
     const restarProducto = ()=>{
@@ -23,6 +24,7 @@ const ItemCount = () =>{
         if(counter === 0){
             setBtnActivado(true)
         }
+        
      
         };
            

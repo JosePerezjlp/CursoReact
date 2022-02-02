@@ -5,14 +5,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import ItemCount from '../components/itemcount/itemcount'
-import Item from '../components/item/item'
+import ItemList from '../components/itemlist/itemlist'
 
-
-const itemListContainer = ({producto,img,marca,precio,stock}) => {
+const itemListContainer = ({producto,img,marca,precio}) => {
   return (
     <Card sx={{ maxWidth: 280 , m: 2 , boxShadow:10}}>
-     
-        <Typography gutterBottom variant="h5" component="div" >
+       <Typography gutterBottom variant="h5" component="div" >
           {producto}
           <hr></hr>
         </Typography>
@@ -22,22 +20,19 @@ const itemListContainer = ({producto,img,marca,precio,stock}) => {
         image={img}
         alt="moto"
       />
-       
-      <CardContent>
+       <CardContent>
         <Typography variant="body2" color="text.secondary">
           Marca: {marca}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Precio: {precio}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Stock: {stock}
-        </Typography>
+        
       </CardContent>
       <CardActions >
          <ItemCount sx={{display:'flex',justifyContent:'center',alignItems:'center'}}/>
       </CardActions>
-    <Item/>
+    <ItemList/>
     </Card>
    
   );

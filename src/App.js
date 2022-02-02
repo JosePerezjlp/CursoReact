@@ -17,8 +17,7 @@ function App() {
       img={motorola}
       marca='Motorola g8'
       precio='$29000'
-      stock='10'
-     />
+      />
      </div>
      </>
 );

@@ -1,25 +1,27 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
+import React, { useState, useEffect } from 'react';
+import Item from '../item/item'
 
-const itemList = ({data}) => { 
- console.log(data.title)
-  return (
-    <Card sx={{ mt:10 , maxWidth: 345 }}>
-      
-      <CardContent>
-        
-        <Typography gutterBottom variant="h5" component="div">
-          {data.title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {data.body}
-        </Typography>
-      </CardContent>
-      
-    </Card>
-  );
+const ItemList = () =>{
+    const [items,setItems] = useState([]);
+    
+    useEffect(()=>{
+        fetch('http://jsonplaceholder.typicode.com/posts')
+            .then(response => response.json())
+            .then(json => setItems(json))
+    },[]);
+    
+    return (
+        <div>
+            {items.map((item)=>{
+                return (
+                    <div key={item.id}>
+                    <Item data={item}/>
+                    </div>
+                )
+            })}
+            
+        </div>
+    )
 }
 
-export default itemList
+export default ItemList;
