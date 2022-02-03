@@ -6,8 +6,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import ItemCount from '../components/itemcount/itemcount'
 import ItemList from '../components/itemlist/itemlist'
+import { useState } from 'react';
 
-const itemListContainer = ({producto,img,marca,precio}) => {
+const ItemListContainer = ({producto,img,marca,precio}) => {
+  const [onAdd,setOnAdd] = useState()
+
   return (
     <Card sx={{ maxWidth: 280 , m: 2 , boxShadow:10}}>
        <Typography gutterBottom variant="h5" component="div" >
@@ -30,7 +33,8 @@ const itemListContainer = ({producto,img,marca,precio}) => {
         
       </CardContent>
       <CardActions >
-         <ItemCount sx={{display:'flex',justifyContent:'center',alignItems:'center'}}/>
+         
+         <ItemCount  onAdd={onAdd} b={setOnAdd} stock='10' />
       </CardActions>
     <ItemList/>
     </Card>
@@ -38,4 +42,4 @@ const itemListContainer = ({producto,img,marca,precio}) => {
   );
 }
 
-export default itemListContainer
+export default ItemListContainer
