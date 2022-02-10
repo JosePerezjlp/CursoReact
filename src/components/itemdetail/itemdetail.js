@@ -1,23 +1,31 @@
 import React from 'react';
+import { useState } from 'react';
 // import Item from '../item/item'
 import {CardMedia,Card,CardContent,Typography } from '@mui/material';
-
+import ItemCount from '../itemcount/itemcount';
 const ItemDetail = ({item}) =>{
+
+        const [onAdd,setOnAdd] = useState();
+        const [stock,setStock] = useState(10)
+
                 
                 return (     
                        
-                 <div>        
-                        <Card sx={{ maxWidth: 250 , m:10 }} >       
+                 <div className='detail'>        
+                        <Card sx={{ maxWidth: 550, mt:5 , ml:45 , mb:5 , boxShadow:10 }}  >       
                         <CardContent>  
                         <CardMedia
                                    component="img"
-                                    height="300"
+                                    height="400"
                                    image={item.image}
                                    
                             />   
                         <Typography gutterBottom variant="h5" component="div">        
-                                {item.category} 
-                        </Typography>     
+                                {item.title} 
+                        </Typography> 
+                        <Typography variant="body2" color="text.secondary">
+                                   {item.category}
+                           </Typography>    
                         <Typography variant="body2" color="text.secondary">
                                    Precio:${item.price}
                            </Typography>
@@ -27,7 +35,7 @@ const ItemDetail = ({item}) =>{
                            </Typography>
                            
                         </CardContent>
-
+                                <ItemCount onAdd={onAdd} setOnAdd={setOnAdd} setStock={setStock} stock={stock} />
                         </Card>
                     </div>
                 )
