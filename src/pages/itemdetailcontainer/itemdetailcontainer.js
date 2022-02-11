@@ -10,11 +10,11 @@ const ItemDetailContainer = () => {
   
   const [items,setItems] = useState({});
   
-  console.log(items)
+        //console.log(items)
 	let id = useParams();
 
 	let itemID = id.id;
-        console.log(itemID)
+        //console.log(itemID)
     
     useEffect(()=>{
       fetch(`https://fakestoreapi.com/products/${itemID}`)

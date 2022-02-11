@@ -1,17 +1,19 @@
 import React from 'react';
 
-const styles = {
-	container: {
-		margin: '40px 0 40px 0',
-	},
-};
+
 
 const Nosotros = () => {
 	return (
-		<div style={styles.container}>
-			About
-			<p>https://v5.reactrouter.com/web/guides/quick-start</p>
-			<p>https://breakingbadapi.com/api/characters</p>
+		<div>
+			<p>Nos Econtramos en ........ Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+				eos ducimus perferendis vel velit vero repellendus sint, fugiat
+				mollitia? Expedita nemo itaque illo fugiat quidem aut! Doloribus
+				mollitia atque perspiciatis. Exercitationem, hic laboriosam! Nemo
+				adipisci repellendus ratione eaque ullam quae voluptates? Possimus omnis
+				expedita, hic cupiditate fugit tempore officia iusto! Illum ratione
+				voluptatem, similique error cum corrupti porro iusto optio. In ipsum
+				omnis beatae exercitationem. In doloremque, eum dicta earum dolore
+				officia est suscipit dolorem praesentium modi tempora sequi aspernatur</p>
 		</div>
 	);
 };
