@@ -1,8 +1,7 @@
 import * as React from 'react';
 // import ItemCount from '../components/itemcount/itemcount'
-import ItemList from '../components/itemlist/itemlist'
+import ItemList from '../../components/itemlist/itemlist'
 import { useState, useEffect } from 'react';
-
 
 const ItemListContainer = () => {
   const [items,setItems] = useState([]);
@@ -14,9 +13,7 @@ const ItemListContainer = () => {
     },[]);
 
   return (
-    
     <ItemList items={items} />
-    
   );
 }
 

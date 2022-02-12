@@ -5,34 +5,24 @@ import { useParams } from 'react-router';
 import { useState, useEffect } from 'react';
 import ItemDetail from '../../components/itemdetail/itemdetail';
 
-
 const ItemDetailContainer = () => {
-  
-  const [items,setItems] = useState({});
-  
-        //console.log(items)
+  const [item,setItem] = useState({});
+          //console.log(items)
 	let id = useParams();
-
 	let itemID = id.id;
         //console.log(itemID)
     
     useEffect(()=>{
       fetch(`https://fakestoreapi.com/products/${itemID}`)
       .then(res => res.json())
-      .then(json => setItems(json))
-            
+      .then(json => setItem(json))
     },[itemID]);
         
-
-    
         return (
             <div className='contenedorDetail'>
-                <ItemDetail item={items} />
+                <ItemDetail item={item} />
             </div>
         );
-    
+ }
 
-     
-  }
-
-export default ItemDetailContainer
+export default ItemDetailContainer;

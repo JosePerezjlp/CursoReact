@@ -3,14 +3,12 @@ import { useState } from 'react';
 // import Item from '../item/item'
 import {CardMedia,Card,CardContent,Typography } from '@mui/material';
 import ItemCount from '../itemcount/itemcount';
-const ItemDetail = ({item}) =>{
+import { Link } from 'react-router-dom';
 
+const ItemDetail = ({item}) =>{
         const [onAdd,setOnAdd] = useState();
         const [stock,setStock] = useState(10)
-
-                
-                return (     
-                       
+               return (                          
                  <div className='detail'>        
                         <Card sx={{ maxWidth: 550, mt:5 , ml:45 , mb:5 , boxShadow:10 }}  >       
                         <CardContent>  
@@ -18,8 +16,7 @@ const ItemDetail = ({item}) =>{
                                    component="img"
                                     height="400"
                                    image={item.image}
-                                   
-                            />   
+                                        />   
                         <Typography gutterBottom variant="h5" component="div">        
                                 {item.title} 
                         </Typography> 
@@ -33,14 +30,11 @@ const ItemDetail = ({item}) =>{
                            <Typography variant="body2" color="text.secondary">
                                    {item.description}
                            </Typography>
-                           
-                        </CardContent>
-                                <ItemCount onAdd={onAdd} setOnAdd={setOnAdd} setStock={setStock} stock={stock} />
+                           </CardContent>
+                          {onAdd?<Link to={'/cart'}><button style={{backgroundColor:'cyan',marginLeft:210,marginBottom:3}}>Terminar mi compra</button></Link>:<ItemCount onAdd={onAdd} setOnAdd={setOnAdd} setStock={setStock} stock={stock} />}
                         </Card>
                     </div>
                 )
-            
-     }  
-     
-
+             }  
+                  
 export default ItemDetail;

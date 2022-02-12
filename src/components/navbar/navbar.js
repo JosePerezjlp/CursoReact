@@ -7,7 +7,6 @@ const navbar = () => {
         <div>
             <nav>
                 <ul className='itemList'>
-                    
                     <Link to='/' className='Link'>Inicio</Link>
                     <Link to='/nosotros' className='Link'>Nosotros</Link>
                     <Link to='/contacto' className='Link'>Contacto</Link>
@@ -18,7 +17,6 @@ const navbar = () => {
                 
             <hr></hr>    
             </nav>
-
         </div>
     );
 }

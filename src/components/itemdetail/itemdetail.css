@@ -1,3 +1,10 @@
 .detail{
     background-color: cyan;
 }
+.btnEnd{
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 220px;
+    border-color: cyan;
+    margin-bottom: 4px;
+}
