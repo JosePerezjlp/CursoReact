@@ -1,12 +1,11 @@
-import React,{ useState } from "react"
-import './itemcount.css'
+import React,{ useState } from "react";
+import './itemcount.css';
 
-const ItemCount = ({setOnAdd, stock ,onAdd }) =>{
-    const [btnActivo,setBtnActivado] = useState(true)
+const ItemCount = ({setOnAdd, stock ,onAdd,data }) =>{
+    const [btnActivo,setBtnActivado] = useState(true);
     const [counter, setCounter] = useState(0);
     const agregarProducto = ()=>{
-          
-        if(counter < stock) {
+           if(counter < stock) {
             let aux = counter + 1;
             setCounter(aux)
             if(aux > 0 )  {
@@ -24,8 +23,9 @@ const ItemCount = ({setOnAdd, stock ,onAdd }) =>{
          }
         };
     const add = ()=>{
-        setOnAdd(counter)
-        console.log(`Los ${onAdd} productos que selecciono se agregaron al carrito`)
+        
+         setOnAdd( [data.id,data.title,data.price,counter])
+        console.log(onAdd)
         }
         return(
         <div>

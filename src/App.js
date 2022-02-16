@@ -1,18 +1,20 @@
 import './App.css';
 import Navbar from './components/navbar/navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ArticuloProvider } from './cardcontext/cardcontext';
 
 // PAGES
-import Inicio from './containerpresenter/inicio/inicio';
+import Inicio from './containerpresenter/inicio/inicio'
 import Nosotros from './containerpresenter/nosotros/nosotros';
 import Contacto from './containerpresenter/contacto/contacto';
-import ItemDetailV from './containerpresenter/itemdetail/itemdetailv';
-import Cart from './containerpresenter/cart/cart';
+import ItemDetailV from './containerpresenter/itemdetailv/itemdetailv'
+import Cart from './containerpresenter/cart/cart'
 
 const App = () => {
 
   return (
-    <Router>
+      <Router>
+        <ArticuloProvider>
       <div>
         <Navbar/>
         <Routes>
@@ -24,7 +26,9 @@ const App = () => {
         </Routes>
      
      </div>
+     </ArticuloProvider>
      </Router>
+     
 );
 }
 
