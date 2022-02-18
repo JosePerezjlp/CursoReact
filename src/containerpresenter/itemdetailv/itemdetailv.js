@@ -6,7 +6,7 @@ const ItemDetailV = () => {
 		<div>
 			<ItemDetailContainer/>
 		</div>
-	);
+	)
 };
 
 export default ItemDetailV;

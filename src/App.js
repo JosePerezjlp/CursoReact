@@ -4,18 +4,19 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ArticuloProvider } from './cardcontext/cardcontext';
 
 // PAGES
-import Inicio from './containerpresenter/inicio/inicio'
+import Inicio from './containerpresenter/inicio/inicio';
 import Nosotros from './containerpresenter/nosotros/nosotros';
 import Contacto from './containerpresenter/contacto/contacto';
-import ItemDetailV from './containerpresenter/itemdetailv/itemdetailv'
-import Cart from './containerpresenter/cart/cart'
+import ItemDetailV from './containerpresenter/itemdetailv/itemdetailv';
+import Cart from './containerpresenter/cart/cart';
 
 const App = () => {
 
   return (
+    
       <Router>
-        <ArticuloProvider>
-      <div>
+      <ArticuloProvider>
+
         <Navbar/>
         <Routes>
           <Route path='/' element={<Inicio />}/>
@@ -24,12 +25,11 @@ const App = () => {
           <Route path='/cart' element={<Cart />}/>
           <Route path='/detail/:id' element={<ItemDetailV />}/>
         </Routes>
-     
-     </div>
-     </ArticuloProvider>
+        </ArticuloProvider>
+    
      </Router>
      
-);
-}
+)
+};
 
 export default App;

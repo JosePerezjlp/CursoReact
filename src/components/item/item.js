@@ -24,4 +24,4 @@ const item = ({data}) => {
   );
 }
 
-export default item
+export default item;

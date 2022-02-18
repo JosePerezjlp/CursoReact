@@ -7,7 +7,7 @@ const ItemList = ({items}) =>{
         <div className='contenedor'>
             {items.map((item)=>{
                 return (
-                    <div key={item.id}>
+                    <div>
                        <Link to={`/detail/${item.id}`} >
                         <Item data={item}/>
                         </Link>

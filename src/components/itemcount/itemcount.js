@@ -1,7 +1,7 @@
 import React,{ useState } from "react";
 import './itemcount.css';
 
-const ItemCount = ({setOnAdd, stock ,onAdd,data }) =>{
+const ItemCount = ({ stock ,onAdd }) =>{
     const [btnActivo,setBtnActivado] = useState(true);
     const [counter, setCounter] = useState(0);
     const agregarProducto = ()=>{
@@ -12,7 +12,7 @@ const ItemCount = ({setOnAdd, stock ,onAdd,data }) =>{
               setBtnActivado(false)
             }
         }
-     }
+     };
     const restarProducto = ()=>{
            if(counter > 0) {
             let aux = counter - 1 ;
@@ -23,10 +23,8 @@ const ItemCount = ({setOnAdd, stock ,onAdd,data }) =>{
          }
         };
     const add = ()=>{
-        
-         setOnAdd( [data.id,data.title,data.price,counter])
-        console.log(onAdd)
-        }
+        onAdd(counter)
+       };
         return(
         <div>
             <p className="num">{counter}</p>

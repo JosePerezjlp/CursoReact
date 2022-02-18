@@ -19,10 +19,10 @@ const ItemDetailContainer = () => {
     },[itemID]);
         
         return (
-            <div className='contenedorDetail'>
-                <ItemDetail item={item} />
-            </div>
-        );
- }
+          <div>
+             <ItemDetail item={item} />
+             </div>
+         )
+ };
 
 export default ItemDetailContainer;
