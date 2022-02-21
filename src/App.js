@@ -7,7 +7,6 @@ import ItemDetailContainer from './container/itemdetailcontainer/itemdetailconta
 import Inicio from './components/pages/inicio/inicio'
 import Nosotros from './components/pages/nosotros/nosotros';
 import Contacto from './components/pages/contacto/contacto';
-
 import Cart from './components/pages/cart/cart';
 
 const App = () => {
