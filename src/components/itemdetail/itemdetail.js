@@ -8,14 +8,16 @@ import { Link } from 'react-router-dom';
 import { ArticuloContext }  from '../../cardcontext/cardcontext';
 
 const ItemDetail = ({item}) =>{
+        const [render,setRender] = useState(true)
         const [stock,setStock] = useState(10);
         const { addItem } = useContext(ArticuloContext);
+        
         function onAdd(cantidad){
-                let objAcce = ({item,cantidad } ) 
-                addItem(objAcce)
-        };
-              
-               return (                          
+                setRender(false);
+                 addItem({item,cantidad}) 
+                };
+        
+                return (                          
                  <div className='detail'>        
                         <Card sx={{ maxWidth: 550, mt:5 , ml:45 , mb:5 , boxShadow:10 }}  >       
                         <CardContent>  
@@ -39,7 +41,7 @@ const ItemDetail = ({item}) =>{
                            </Typography>
                           
                            </CardContent>
-                          {onAdd? <ItemCount onAdd={onAdd} setStock={setStock} stock={stock}/>:<Link to={'/cart'}><button onClick={onAdd} style={{backgroundColor:'cyan',marginLeft:210,marginBottom:3}}>Terminar mi compra</button></Link>}
+                          {render? <ItemCount onAdd={onAdd} setStock={setStock} stock={stock}/>:<Link to={'/cart'}><button onClick={onAdd} style={{backgroundColor:'cyan',marginLeft:210,marginBottom:3}}>Terminar mi compra</button></Link>}
                         </Card>
                     </div>
                 )
