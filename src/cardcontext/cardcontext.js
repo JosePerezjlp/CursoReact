@@ -4,6 +4,11 @@ export const ArticuloContext = createContext();
 
 export const ArticuloProvider = ({ children }) => {
     const [art,setArt] = useState([]);
+    const [carga,setCarga] = useState(false);
+  
+     function cantidadItems(){
+     return art.reduce((total,item)=> total + item.cantidad,0)
+   }
     
     function removeItem (id){
       const updateArt = art.filter((item) => item.id !== id)
@@ -19,7 +24,7 @@ export const ArticuloProvider = ({ children }) => {
                    name: infoItem.item.title,
                    categoria: infoItem.item.category,
                    descripcion: infoItem.item.description,
-                   price: infoItem.item.price,
+                   precio: infoItem.item.price,
                    imagen: infoItem.item.image,
                    cantidad: infoItem.cantidad
                 })
@@ -28,7 +33,7 @@ export const ArticuloProvider = ({ children }) => {
         };
         
       return(
-        <ArticuloContext.Provider value={{art,addItem,setArt,removeItem}} > 
+        <ArticuloContext.Provider value={{art,carga,addItem,setArt,removeItem,setCarga,cantidadItems}} > 
             {children}
         </ArticuloContext.Provider>
 )

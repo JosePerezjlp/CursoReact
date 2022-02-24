@@ -10,9 +10,10 @@ import { ArticuloContext }  from '../../cardcontext/cardcontext';
 const ItemDetail = ({item}) =>{
         const [render,setRender] = useState(true)
         const [stock,setStock] = useState(10);
-        const { addItem } = useContext(ArticuloContext);
+        const { addItem,setCarga } = useContext(ArticuloContext);
         
         function onAdd(cantidad){
+                setCarga(true);
                 setRender(false);
                  addItem({item,cantidad}) 
                 };
