@@ -10,7 +10,7 @@ const Categoria = ()=>{
     const [acce,setAcce]= useState([]);
     let {categoria}  = useParams();
      
-    console.log(tuvieja)
+    console.log(acce)
       
     useEffect(()=>{
       const gender = async () =>{
