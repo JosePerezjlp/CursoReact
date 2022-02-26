@@ -8,7 +8,8 @@ import Inicio from './components/pages/inicio/inicio'
 import Nosotros from './components/pages/nosotros/nosotros';
 import Contacto from './components/pages/contacto/contacto';
 import Cart from './components/pages/cart/cart';
-
+import Categoria from './components/pages/categoria/categoria';
+import CompraFinalizada from './components/pages/compraFinalizada/comprafinalizada';
 const App = () => {
 
   return (
@@ -23,6 +24,8 @@ const App = () => {
           <Route path='/contacto' element={<Contacto />}/>
           <Route path='/cart' element={<Cart />}/>
           <Route path='/detail/:id' element={<ItemDetailContainer />}/>
+          <Route path='/categoria/:categoria' element={<Categoria />}/>
+          <Route path='/comprafinalizada' element={<CompraFinalizada />}/>
         </Routes>
         </ArticuloProvider>
     

@@ -6,9 +6,10 @@ const ItemList = ({items}) =>{
    return (
         <div className='contenedor'>
             {items.map((item)=>{
+            
                 return (
-                    <div key={item.id}>
-                       <Link to={`/detail/${item.id}`} >
+                    <div key={item.id}                    >
+                       <Link to={`/detail/${item.id}`}	style={{ textDecoration: 'none' }}>
                         <Item data={item}/>
                         </Link>
                      </div>

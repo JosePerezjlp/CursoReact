@@ -1,13 +1,12 @@
 import * as React from 'react';
 import {Card,CardContent,Typography,CardMedia } from '@mui/material';
-import './item.css'
 
-const item = ({data}) => {
+const CardCategoria = ({data}) => {
   
    return (
      
-    <div className='contenedor'>
-       <Card sx={{ maxWidth: 450, boxShadow:10 }}>
+    <div className='sss'>
+       <Card sx={{ maxWidth: 300, boxShadow:10 }}>
         <CardContent>
         <CardMedia    
            component="img"
@@ -26,4 +25,4 @@ const item = ({data}) => {
   );
 }
 
-export default item;
+export default CardCategoria;

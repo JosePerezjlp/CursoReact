@@ -24,6 +24,7 @@ const ItemCount = ({ stock ,onAdd }) =>{
         };
     const add = ()=>{
         onAdd(counter)
+                
        };
         return(
         <div>

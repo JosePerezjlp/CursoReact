@@ -1,20 +1,24 @@
-ul {
+ul{
+    display:flex;
+    align-items: center;
     
-    list-style: none;
 }
-
-
 .Link{
     color:black;
     list-style: none;
     margin-left: 10px;
+    text-decoration: none;
 }
 hr{
     margin-left: 20px;
     margin-right: 20px;
 }
 .carrito {
-    margin-top: -26px;
-    padding-left: 800px;
+    
+    margin-left: 200px;
 }
 
+.Link:hover{
+    color:red;
+    cursor:pointer;
+}

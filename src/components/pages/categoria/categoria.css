@@ -1,0 +1,8 @@
+.cat{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    padding-left: 40px;
+    text-decoration: none;    
+}

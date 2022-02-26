@@ -11,39 +11,42 @@ const ItemDetail = ({item}) =>{
         const [render,setRender] = useState(true)
         const [stock,setStock] = useState(10);
         const { addItem,setCarga } = useContext(ArticuloContext);
-        
+        console.log(item)
         function onAdd(cantidad){
                 setCarga(true);
                 setRender(false);
                  addItem({item,cantidad}) 
-                };
+               };
         
-                return (                          
-                 <div className='detail'>        
+                return (
+                                                  
+                 <div className='detail'>
+                          
                         <Card sx={{ maxWidth: 550, mt:5 , ml:45 , mb:5 , boxShadow:10 }}  >       
                         <CardContent>  
                         <CardMedia
                                    component="img"
                                     height="400"
-                                   image={item.image}
+                                   image={item.img}
                                         />   
                         <Typography gutterBottom variant="h5" component="div">        
-                                {item.title} 
+                                {item.categoria} 
                         </Typography> 
                         <Typography variant="body2" color="text.secondary">
-                                   {item.category}
+                                   {item.marca}
                            </Typography>    
                         <Typography variant="body2" color="text.secondary">
-                                   Precio:${item.price}
+                                   Precio:${item.precio}
                            </Typography>
                          <br></br>
                            <Typography variant="body2" color="text.secondary">
-                                   {item.description}
+                                   
                            </Typography>
                           
                            </CardContent>
-                          {render? <ItemCount onAdd={onAdd} setStock={setStock} stock={stock}/>:<Link to={'/cart'}><button onClick={onAdd} style={{backgroundColor:'cyan',marginLeft:210,marginBottom:3}}>Terminar mi compra</button></Link>}
+                          {render? <ItemCount onAdd={onAdd} setStock={setStock} stock={stock}/>:<Link to={'/cart'}><button onClick={onAdd} style={{backgroundColor:'cyan',marginLeft:210,marginBottom:3}}>Terminar Compra</button></Link>}
                         </Card>
+                        
                     </div>
                 )
              };

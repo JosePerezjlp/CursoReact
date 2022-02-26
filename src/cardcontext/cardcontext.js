@@ -6,6 +6,7 @@ export const ArticuloProvider = ({ children }) => {
     const [art,setArt] = useState([]);
     const [carga,setCarga] = useState(false);
   
+   // console.log(art)
      function cantidadItems(){
      return art.reduce((total,item)=> total + item.cantidad,0)
    }
@@ -21,11 +22,11 @@ export const ArticuloProvider = ({ children }) => {
           }else {
               art.push({
                    id: infoItem.item.id,
-                   name: infoItem.item.title,
-                   categoria: infoItem.item.category,
+                   name: infoItem.item.categoria,
+                   categoria: infoItem.item.marca,
                    descripcion: infoItem.item.description,
-                   precio: infoItem.item.price,
-                   imagen: infoItem.item.image,
+                   precio: infoItem.item.precio,
+                   imagen: infoItem.item.img,
                    cantidad: infoItem.cantidad
                 })
           }
