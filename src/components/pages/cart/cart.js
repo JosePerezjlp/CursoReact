@@ -19,7 +19,7 @@ const Cart = () => {
 							
 						<button onClick={() =>setArt([])}>Borrar todo</button>
 						<button onClick={() =>removeItem(item.id)}>Borrar item</button>
-					<Link to={'/comprafinalizada'} style={{textDecoration:'none'}} >	<button onClick={()=>setArt([])}>Finalizar compra</button> </Link>
+					<Link to={'/finalizarcompra'} style={{textDecoration:'none'}} >	<button onClick={()=>setArt([])}>Finalizar compra</button> </Link>
 				 </div> 
 				   
 				}):<CarritoVacio/>}<div><p>precio total:${precioTotal} </p></div>

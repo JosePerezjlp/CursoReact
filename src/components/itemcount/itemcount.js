@@ -24,8 +24,7 @@ const ItemCount = ({ stock ,onAdd }) =>{
         };
     const add = ()=>{
         onAdd(counter)
-                
-       };
+        };
         return(
         <div>
             <p className="num">{counter}</p>
@@ -35,6 +34,7 @@ const ItemCount = ({ stock ,onAdd }) =>{
             </div>
             <div>
                <button disabled={btnActivo} onClick={add} className="btn">Agregar al Carrito</button>
+               
              </div>
             <div className="stock">
                 <p>Stock Disponible:{stock} </p>

@@ -9,7 +9,7 @@ import Nosotros from './components/pages/nosotros/nosotros';
 import Contacto from './components/pages/contacto/contacto';
 import Cart from './components/pages/cart/cart';
 import Categoria from './components/pages/categoria/categoria';
-import CompraFinalizada from './components/pages/compraFinalizada/comprafinalizada';
+import FinalizarCompra from './components/pages/finalizarcompra/finalizarcompra';
 const App = () => {
 
   return (
@@ -25,7 +25,7 @@ const App = () => {
           <Route path='/cart' element={<Cart />}/>
           <Route path='/detail/:id' element={<ItemDetailContainer />}/>
           <Route path='/categoria/:categoria' element={<Categoria />}/>
-          <Route path='/comprafinalizada' element={<CompraFinalizada />}/>
+          <Route path='/finalizarcompra' element={<FinalizarCompra />}/>
         </Routes>
         </ArticuloProvider>
     

@@ -6,6 +6,8 @@ import {CardMedia,Card,CardContent,Typography } from '@mui/material';
 import ItemCount from '../itemcount/itemcount';
 import { Link } from 'react-router-dom';
 import { ArticuloContext }  from '../../cardcontext/cardcontext';
+import AlertDetail from '../itemdetail/alertDetail'
+
 
 const ItemDetail = ({item}) =>{
         const [render,setRender] = useState(true)
@@ -15,8 +17,8 @@ const ItemDetail = ({item}) =>{
         function onAdd(cantidad){
                 setCarga(true);
                 setRender(false);
-                 addItem({item,cantidad}) 
-               };
+                 addItem({item,cantidad})
+                };
         
                 return (
                                                   
@@ -44,7 +46,7 @@ const ItemDetail = ({item}) =>{
                            </Typography>
                           
                            </CardContent>
-                          {render? <ItemCount onAdd={onAdd} setStock={setStock} stock={stock}/>:<Link to={'/cart'}><button onClick={onAdd} style={{backgroundColor:'cyan',marginLeft:210,marginBottom:3}}>Terminar Compra</button></Link>}
+                          {render? <ItemCount onAdd={onAdd} setStock={setStock} stock={stock}/>:<Link to={'/cart'}><button onClick={onAdd} style={{backgroundColor:'cyan',marginLeft:210,marginBottom:3}}>Terminar Compra  </button> <AlertDetail/></Link>}
                         </Card>
                         
                     </div>
