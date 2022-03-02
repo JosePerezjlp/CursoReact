@@ -18,7 +18,7 @@ const initialState = {
 
 const FinalizarCompra = () => {
 	const [values, setValues] = useState(initialState);
-	// Este estado está destinado a guardar el id de la compra
+	
 	const [numId, setNumId] = useState('');
 
 	const handleOnChange = (e) => {

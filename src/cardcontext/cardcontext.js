@@ -22,12 +22,13 @@ export const ArticuloProvider = ({ children }) => {
           }else {
               art.push({
                    id: infoItem.item.id,
-                   name: infoItem.item.categoria,
-                   categoria: infoItem.item.marca,
+                   name: infoItem.item.marca,
+                   categoria: infoItem.item.categoria,
                    descripcion: infoItem.item.description,
                    precio: infoItem.item.precio,
-                   imagen: infoItem.item.img,
-                   cantidad: infoItem.cantidad
+                   img: infoItem.item.img,
+                   cantidad: infoItem.cantidad,
+                   stock: infoItem.item.stock
                 })
           }
           setArt([...art]);

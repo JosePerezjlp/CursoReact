@@ -6,12 +6,10 @@ import {CardMedia,Card,CardContent,Typography } from '@mui/material';
 import ItemCount from '../itemcount/itemcount';
 import { Link } from 'react-router-dom';
 import { ArticuloContext }  from '../../cardcontext/cardcontext';
-import AlertDetail from '../itemdetail/alertDetail'
-
+import AlertDetail from '../itemdetail/alertDetail';
 
 const ItemDetail = ({item}) =>{
         const [render,setRender] = useState(true)
-        const [stock,setStock] = useState(10);
         const { addItem,setCarga } = useContext(ArticuloContext);
         console.log(item)
         function onAdd(cantidad){
@@ -46,7 +44,7 @@ const ItemDetail = ({item}) =>{
                            </Typography>
                           
                            </CardContent>
-                          {render? <ItemCount onAdd={onAdd} setStock={setStock} stock={stock}/>:<Link to={'/cart'}><button onClick={onAdd} style={{backgroundColor:'cyan',marginLeft:210,marginBottom:3}}>Terminar Compra  </button> <AlertDetail/></Link>}
+                          {render? <ItemCount onAdd={onAdd} stock={item.stock}/>:<Link to={'/cart'}><button onClick={onAdd} style={{backgroundColor:'cyan',marginLeft:210,marginBottom:3}}>Terminar Compra  </button> <AlertDetail/></Link>}
                         </Card>
                         
                     </div>

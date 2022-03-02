@@ -14,9 +14,9 @@ const Cart = () => {
 			{art.length>0?art.map((item)=>{
 										
 				return  <div className='cart' key={item.id}>
-						<div>({item.imagen} <h2>{item.categoria}({item.cantidad}) </h2><h5>{item.name}</h5><p>${item.precio }</p>
+						<div>  <h2>{item.categoria}({item.cantidad}) </h2> <img src={item.img} alt='sera'/><h5>{item.name}</h5><p>${item.precio }</p>
 						</div>
-							
+						
 						<button onClick={() =>setArt([])}>Borrar todo</button>
 						<button onClick={() =>removeItem(item.id)}>Borrar item</button>
 					<Link to={'/finalizarcompra'} style={{textDecoration:'none'}} >	<button onClick={()=>setArt([])}>Finalizar compra</button> </Link>
