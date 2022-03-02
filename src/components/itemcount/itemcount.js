@@ -24,7 +24,7 @@ const ItemCount = ({ stock ,onAdd }) =>{
          }
         };
     const add = ()=>{
-        onAdd(stock.stock - counter)
+        onAdd(counter)
         };
         return(
         <div>
