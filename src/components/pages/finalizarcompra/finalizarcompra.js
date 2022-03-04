@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
+import '../finalizarcompra/finalizarcompra.css'
 
-// Firebase
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../../firebase/firebaseConfig'
-
 
 import MsjFinalizado from '../../msjseguimiento/msjseguimiento';
 import TextField from '@mui/material/TextField';
@@ -77,7 +76,7 @@ const FinalizarCompra = () => {
 					name='city'
 					onChange={handleOnChange}
 				/>
-				<button className='btnASendAction'>Send</button>
+				<button className='btnFinish'>Enviar</button>
 			</form>
 			{numId && <MsjFinalizado numId={numId} />}
 		</div>

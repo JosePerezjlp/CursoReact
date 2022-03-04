@@ -1,4 +1,38 @@
 .cart{
     margin: 10px;
     border:1px solid black;
+    margin-right: 960px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+}
+.btn1{
+    font-size: 20px;
+    color: red;
+    margin-left: 20px;
+}
+.btns{
+    border-radius: 4px;
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.btns:hover{
+    color:blue
+}
+.btnVacio{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.btnVacio p {
+    font-weight: bold;
+}
+.btnVacio button{
+    cursor:pointer
+}
+.btnVacio button:hover{
+    color:blue;
 }

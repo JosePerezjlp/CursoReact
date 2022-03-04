@@ -14,12 +14,14 @@ const Cart = () => {
 			{art.length>0?art.map((item)=>{
 										
 				return  <div className='cart' key={item.id}>
-						<div>  <h2>{item.categoria}({item.cantidad}) </h2> <img src={item.img} alt='sera'/><h5>{item.name}</h5><p>${item.precio }</p>
+						
+						<div> <h2>{item.categoria} {item.name} ({item.cantidad})<button className='btn1' onClick={() =>removeItem(item.id)}><i className="fa-solid fa-trash"></i></button> </h2> <img src={item.img} alt='sera'/><p>${item.precio }</p>
+						Stock Disponible:{item.stock - item.cantidad}
 						</div>
 						
-						<button onClick={() =>setArt([])}>Borrar todo</button>
-						<button onClick={() =>removeItem(item.id)}>Borrar item</button>
-					<Link to={'/finalizarcompra'} style={{textDecoration:'none'}} >	<button onClick={()=>setArt([])}>Finalizar compra</button> </Link>
+						<button className='btns' onClick={() =>setArt([])}>Borrar todo</button>
+						
+					<Link to={'/finalizarcompra'} style={{textDecoration:'none'}} >	<button className='btns' onClick={()=>setArt([])}>Finalizar compra</button> </Link>
 				 </div> 
 				   
 				}):<CarritoVacio/>}<div><p>precio total:${precioTotal} </p></div>

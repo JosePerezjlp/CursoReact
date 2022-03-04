@@ -28,7 +28,7 @@ const Categoria = ()=>{
     return(
         <div className="cat">
             {acce.map((accesorios)=>{
-                return <Link to={`/detail/${accesorios.id}`} style={{ textDecoration: 'none' }} ><CardCategoria data={accesorios}/></Link>
+                return <Link to={`/detail/${accesorios.id}`} style={{ textDecoration: 'none' }} key={accesorios.id} ><CardCategoria data={accesorios}/></Link>
             })}
         </div>
         

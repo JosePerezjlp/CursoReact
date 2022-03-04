@@ -4,6 +4,8 @@
         grid-gap: 10px;
         padding: 10px;
         padding-left: 40px;
-        background-color: cyan;
-        
+}
+
+.imgItem{
+    margin-right: 200px;    
 }

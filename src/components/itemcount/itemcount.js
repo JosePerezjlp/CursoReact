@@ -5,8 +5,7 @@ const ItemCount = ({ stock ,onAdd }) =>{
     const [btnActivo,setBtnActivado] = useState(true);
     const [counter, setCounter] = useState(0);
     const agregarProducto = ()=>{
-               
-        if(counter < stock) {
+       if(counter < stock) {
             let aux = counter + 1;
             setCounter(aux)
             if(aux > 0 )  {
@@ -30,11 +29,11 @@ const ItemCount = ({ stock ,onAdd }) =>{
         <div>
             <p className="num">{counter}</p>
             <div className="btns">
-            <button onClick={agregarProducto}><i class="fa-solid fa-plus"></i></button>
-            <button onClick={restarProducto}><i class="fa-solid fa-minus"></i></button>
+            <button onClick={agregarProducto}><i className="fa-solid fa-plus"></i></button>
+            <button onClick={restarProducto}><i className="fa-solid fa-minus"></i></button>
             </div>
             <div>
-               <button disabled={btnActivo} onClick={add} className="btn">Agregar al Carrito</button>
+               <button disabled={btnActivo} onClick={add} className="btn"><i className="fa-solid fa-cart-plus"></i></button>
                
              </div>
             <div className="stock">

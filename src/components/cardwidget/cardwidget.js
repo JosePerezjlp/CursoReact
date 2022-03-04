@@ -1,11 +1,10 @@
-import { Icon } from "@mui/material"
 import { useContext } from "react";
 import { ArticuloContext } from "../../cardcontext/cardcontext"
 
 const CardWidget = () =>{
 const {cantidadItems} = useContext(ArticuloContext)
     return (
-            <button ><Icon color="secondary">shoppingcart</Icon>{cantidadItems()} </button>
+            <button ><i className="fa-solid fa-cart-shopping"></i>{cantidadItems()} </button>
          )
 }
 

@@ -1,24 +1,26 @@
+.contenedorNavbar{
+    background-color:black ;
+    margin-top: -20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
 ul{
     display:flex;
     align-items: center;
+    margin-left: 480px;
+    padding-left: 10px;
     
 }
 .Link{
-    color:black;
+    color:white;
     list-style: none;
     margin-left: 10px;
     text-decoration: none;
 }
-hr{
-    margin-left: 20px;
-    margin-right: 20px;
-}
+
 .carrito {
-    
     margin-left: 200px;
+    cursor: pointer;
 }
 
-.Link:hover{
-    color:red;
-    cursor:pointer;
-}

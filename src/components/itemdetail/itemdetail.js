@@ -2,11 +2,12 @@ import React from 'react';
 import { useState } from 'react';
 import { useContext } from 'react';
 // import Item from '../item/item'
-import {CardMedia,Card,CardContent,Typography } from '@mui/material';
+import {Card,CardContent,Typography } from '@mui/material';
 import ItemCount from '../itemcount/itemcount';
 import { Link } from 'react-router-dom';
 import { ArticuloContext }  from '../../cardcontext/cardcontext';
 import AlertDetail from '../itemdetail/alertDetail';
+import '../itemdetail/itemdetail.css'
 
 const ItemDetail = ({item}) =>{
         const [render,setRender] = useState(true)
@@ -22,13 +23,9 @@ const ItemDetail = ({item}) =>{
                                                   
                  <div className='detail'>
                           
-                        <Card sx={{ maxWidth: 550, mt:5 , ml:45 , mb:5 , boxShadow:10 }}  >       
+                        <Card sx={{ maxWidth: 400, mt:5 , ml:55 , mb:5 , boxShadow:10 }}  >       
                         <CardContent>  
-                        <CardMedia
-                                   component="img"
-                                    height="400"
-                                   image={item.img}
-                                        />   
+                        <img className='imgDetail' src={item.img} alt='ss' />  
                         <Typography gutterBottom variant="h5" component="div">        
                                 {item.categoria} 
                         </Typography> 
@@ -40,11 +37,11 @@ const ItemDetail = ({item}) =>{
                            </Typography>
                          <br></br>
                            <Typography variant="body2" color="text.secondary">
-                                   
+                                   {item.descripcion}
                            </Typography>
                           
                            </CardContent>
-                          {render? <ItemCount onAdd={onAdd} stock={item.stock}/>:<Link to={'/cart'}><button onClick={onAdd} style={{backgroundColor:'cyan',marginLeft:210,marginBottom:3}}>Terminar Compra  </button> <AlertDetail/></Link>}
+                          {render? <ItemCount onAdd={onAdd} stock={item.stock}/>:<Link to={'/cart'}><button onClick={onAdd} className='finish' style={{backgroundColor:'cyan',marginLeft:150,marginBottom:3}}>Terminar Compra  </button> <AlertDetail/></Link>}
                         </Card>
                         
                     </div>
