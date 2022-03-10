@@ -7,7 +7,7 @@ const item = ({data}) => {
    return (
      
     <div className='contenedor'>
-       <Card sx={{ maxWidth: 450,border:'green' , boxShadow:10 }}>
+       <Card sx={{ maxWidth: 450,borderColor:'green' , boxShadow:10 }}>
         <CardContent>
         <img className='imgItem' src={data.img} alt='as'/>                                   
                 

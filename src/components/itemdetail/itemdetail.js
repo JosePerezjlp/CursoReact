@@ -1,12 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import { useContext } from 'react';
-// import Item from '../item/item'
 import {Card,CardContent,Typography } from '@mui/material';
 import ItemCount from '../itemcount/itemcount';
 import { Link } from 'react-router-dom';
 import { ArticuloContext }  from '../../cardcontext/cardcontext';
-import AlertDetail from '../itemdetail/alertDetail';
 import '../itemdetail/itemdetail.css'
 
 const ItemDetail = ({item}) =>{
@@ -41,7 +39,7 @@ const ItemDetail = ({item}) =>{
                            </Typography>
                           
                            </CardContent>
-                          {render? <ItemCount onAdd={onAdd} stock={item.stock}/>:<Link to={'/cart'}><button onClick={onAdd} className='finish' style={{backgroundColor:'cyan',marginLeft:150,marginBottom:3}}>Terminar Compra  </button> <AlertDetail/></Link>}
+                          {render? <ItemCount onAdd={onAdd} stock={item.stock}/>:<Link to={'/cart'} ><button className='finish' style={{backgroundColor:'cyan',marginLeft:150,marginBottom:3}}>Terminar Compra  </button></Link>}
                         </Card>
                         
                     </div>

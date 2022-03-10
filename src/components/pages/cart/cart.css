@@ -1,6 +1,6 @@
 .cart{
     margin: 10px;
-    border:1px solid black;
+    border:1.5px solid rgb(0, 205, 0);
     margin-right: 960px;
 }
 img{
@@ -13,14 +13,29 @@ img{
     color: red;
     margin-left: 20px;
 }
-.btns{
+.btnFinalizar{
     border-radius: 4px;
     margin-left: 30px;
     margin-top: 5px;
     margin-bottom: 5px;
+    background-color: rgb(0, 204, 0);
+    font-weight: bold;
 }
-.btns:hover{
-    color:blue
+.btnVaciar{
+    border-radius: 4px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(204, 204, 0);
+    font-weight: bold;
+}
+.btnFinalizar:hover{
+    color:blue;
+    background-color: rgb(0, 255, 0);
+}
+.btnVaciar:hover{
+    color:blue;
+    background-color: rgb(255, 255, 51);
 }
 .btnVacio{
     display:flex;
@@ -31,8 +46,14 @@ img{
     font-weight: bold;
 }
 .btnVacio button{
-    cursor:pointer
+    cursor:pointer;
+    background-color: rgb(0, 204, 0);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
 }
 .btnVacio button:hover{
     color:blue;
+    background-color: rgb(0, 255, 0);
 }

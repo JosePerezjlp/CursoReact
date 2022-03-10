@@ -10,12 +10,12 @@ const navbar = () => {
                     <Link to='/' className='Link'>Inicio</Link>
                     <MenuCategorias className='menuCat'/>
                     <Link to='/nosotros' className='Link'>Nosotros</Link>
-                    <Link to='/contacto' className='Link'>Contacto</Link>
                     <Link to='/cart' className='carrito'>
                     <CardWidget/>
                     </Link>
                 </ul>
             </nav>
+            
         </div>
     );
 }

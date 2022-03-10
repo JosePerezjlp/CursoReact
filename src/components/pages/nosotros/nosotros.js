@@ -1,20 +1,20 @@
 import React from 'react';
-
-
+import '../nosotros/nosotros.css';
 
 const Nosotros = () => {
 	return (
-		<div>
-			<p>Nos Econtramos en ........ Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-				eos ducimus perferendis vel velit vero repellendus sint, fugiat
-				mollitia? Expedita nemo itaque illo fugiat quidem aut! Doloribus
-				mollitia atque perspiciatis. Exercitationem, hic laboriosam! Nemo
-				adipisci repellendus ratione eaque ullam quae voluptates? Possimus omnis
-				expedita, hic cupiditate fugit tempore officia iusto! Illum ratione
-				voluptatem, similique error cum corrupti porro iusto optio. In ipsum
-				omnis beatae exercitationem. In doloremque, eum dicta earum dolore
-				officia est suscipit dolorem praesentium modi tempora sequi aspernatur</p>
-		</div>
+		<div class="contenedorInfo">
+              		
+        <div>
+          <h3>Red Activa</h3>
+          <p> Somos una Local de tecnologia situada en Salta</p>
+          <p> Capital, frente a la plaza alvarado caseros 1895</p>
+          <p> Pasa a ver nuestros productos !!</p>
+          <p> llama para consultas a 4456487 </p>
+          <p> o seguinos en nuestras redes sociales</p>
+        </div>
+        
+      </div>
 	);
 };
 

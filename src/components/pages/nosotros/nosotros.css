@@ -1,0 +1,12 @@
+.contenedorInfo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contenedorInfo h3{
+    text-transform: uppercase;
+}
+.contenedorInfo p {
+    font-weight: bold;
+}

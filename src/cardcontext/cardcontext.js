@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-
+import Swal from "sweetalert2";
 export const ArticuloContext = createContext();
 
 export const ArticuloProvider = ({ children }) => {
@@ -14,7 +14,20 @@ export const ArticuloProvider = ({ children }) => {
     function removeItem (id){
       const updateArt = art.filter((item) => item.id !== id)
       setArt(updateArt)
+      Swal.fire({
+        icon: 'success',
+        title: 'Se elimino el item seleccionado con Exito',
+        showConfirmButton: false,
+        timer: 1500
+        })
     }
+
+  function addItemCart(){
+    
+      art.cantidad++
+  
+  }
+  
     function addItem (infoItem) {
           const foundItem = art.find((item) => item.id === infoItem.item.id);
           if (foundItem){
@@ -24,7 +37,7 @@ export const ArticuloProvider = ({ children }) => {
                    id: infoItem.item.id,
                    name: infoItem.item.marca,
                    categoria: infoItem.item.categoria,
-                   descripcion: infoItem.item.description,
+                   descripcion: infoItem.item.descripcion,
                    precio: infoItem.item.precio,
                    img: infoItem.item.img,
                    cantidad: infoItem.cantidad,
@@ -35,7 +48,7 @@ export const ArticuloProvider = ({ children }) => {
         };
         
       return(
-        <ArticuloContext.Provider value={{art,carga,addItem,setArt,removeItem,setCarga,cantidadItems}} > 
+        <ArticuloContext.Provider value={{art,carga,addItem,setArt,removeItem,setCarga,cantidadItems,addItemCart}} > 
             {children}
         </ArticuloContext.Provider>
 )

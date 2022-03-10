@@ -1,0 +1,41 @@
+.footer {
+    background-color: black;
+    padding-top:15px;
+    padding-bottom: 15px;
+    
+}
+.footer a {
+    margin-left:-40px;
+    margin-right: 80px;
+    
+}
+.footer i {
+    font-size: 30px;
+    color:white;
+    padding-left: 40px;
+}
+
+.contenedorPagos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorPagos i{
+    font-size: 20px;
+}
+.div1{
+    margin-right: 140px;
+    padding-left: 70px;
+    color: grey;
+}
+
+.div2{
+    margin-right: 120px;
+    color: grey;
+}
+
+.div3{
+    margin-right: 100px;
+    color: grey;
+}

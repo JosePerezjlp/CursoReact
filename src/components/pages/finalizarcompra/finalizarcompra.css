@@ -1,9 +1,25 @@
+.contenedorForm{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 10px;
+}
+h1{
+    text-align: center;
+}
 .btnFinish{
-    margin-left: 12px;
-    margin-top: 25px;
+    font-weight: bold;
+    margin-left: 220px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     width: 100px;
+    background-color: rgb(0, 205, 0);
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .btnFinish:hover{
     color:blue;
+    background-color: rgb(0, 255, 0);;
 }

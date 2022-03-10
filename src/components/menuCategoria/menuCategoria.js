@@ -16,30 +16,28 @@ const MenuCategorias = () => {
 	};
 
 	const styles = {
-		popUpBtn: {
+		Btn: {
 			textDecoration: 'none',
 			color: 'white',
-			fontSize: 17,
-            marginTop:2 ,
+			fontSize: 15,
+            marginTop:3 ,
             marginLeft:3,
 			textTransform: 'lowercase',
 		},
-		hover:{
-            color:'red'
-        }
+		
 	};
 
 	return (
 		<div>
 			<Button
-				style={styles.popUpBtn}
+				style={styles.Btn}
 				id='basic-button'
 				aria-controls={open ? 'basic-menu' : undefined}
 				aria-haspopup='true'
 				aria-expanded={open ? 'true' : undefined}
 				onClick={handleClick}
 			>
-				Categorias
+				<span>C</span>ategorias
 			</Button>
 			<Menu
 				id='basic-menu'
@@ -47,7 +45,8 @@ const MenuCategorias = () => {
 				open={open}
 				onClose={handleClose}
 				MenuListProps={{
-					'Sans-serif': 'basic-button',
+					'aria-labelledby': 'basic-button',
+
 				}}
 			>
 				<MenuItem>

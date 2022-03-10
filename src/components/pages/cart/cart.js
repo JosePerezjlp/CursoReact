@@ -17,11 +17,11 @@ const Cart = () => {
 						
 						<div> <h2>{item.categoria} {item.name} ({item.cantidad})<button className='btn1' onClick={() =>removeItem(item.id)}><i className="fa-solid fa-trash"></i></button> </h2> <img src={item.img} alt='sera'/><p>${item.precio }</p>
 						Stock Disponible:{item.stock - item.cantidad}
+												
 						</div>
+						<button className='btnVaciar' onClick={() =>setArt([])}>Vaciar Carrito</button>
 						
-						<button className='btns' onClick={() =>setArt([])}>Borrar todo</button>
-						
-					<Link to={'/finalizarcompra'} style={{textDecoration:'none'}} >	<button className='btns' onClick={()=>setArt([])}>Finalizar compra</button> </Link>
+					<Link to={'/finalizarcompra'} style={{textDecoration:'none'}} >	<button className='btnFinalizar' onClick={()=>setArt([])}>Finalizar compra</button> </Link>
 				 </div> 
 				   
 				}):<CarritoVacio/>}<div><p>precio total:${precioTotal} </p></div>
