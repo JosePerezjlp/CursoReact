@@ -4,6 +4,7 @@ import Footer from './components/footer/footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ArticuloProvider } from './cardcontext/cardcontext';
 import ItemDetailContainer from './container/itemdetailcontainer/itemdetailcontainer';
+import LogoMarcas from './components/logogamer/logogamer';
 // PAGES
 import Inicio from './components/pages/inicio/inicio'
 import Nosotros from './components/pages/nosotros/nosotros';
@@ -18,6 +19,7 @@ const App = () => {
       <ArticuloProvider>
 
         <Navbar/>
+        <LogoMarcas/>
         <Routes>
           <Route path='/' element={<Inicio />}/>
           <Route path='/nosotros' element={<Nosotros />}/>

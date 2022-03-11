@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../finalizarcompra/finalizarcompra.css';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../../firebase/firebaseConfig';
-import MsjFinalizado from '../../msjseguimiento/msjseguimiento';
+import MsjFinalizado from '../../msjfinalizado/msjfinalizado';
 import TextField from '@mui/material/TextField';
 
 const initialState = {

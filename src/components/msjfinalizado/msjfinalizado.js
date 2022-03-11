@@ -6,7 +6,7 @@ const MsjFinalizado = ({ numId }) => {
 	return (
 		<Stack sx={{ width: '100%' }} spacing={2}>
 			<Alert severity='success'>
-				Compra Finalizada con exito! su num de transacción es: {numId}
+				Compra Finalizada con exito! se envio a su mail el num de seguimiento : {numId}
 			</Alert>
 		</Stack>
 	);

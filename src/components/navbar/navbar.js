@@ -2,6 +2,7 @@ import './navbar.css'
 import { Link } from 'react-router-dom';
 import CardWidget from '../cardwidget/cardwidget';
 import MenuCategorias from '../menuCategoria/menuCategoria';
+
 const navbar = () => {
     return (   
         <div className='contenedorNavbar'>

@@ -6,7 +6,7 @@ const Nosotros = () => {
 		<div class="contenedorInfo">
               		
         <div>
-          <h3>Red Activa</h3>
+          <h3>Compra Gamer</h3>
           <p> Somos un local con accesorios de tecnologia situada en Salta</p>
           <p> Capital, frente a la plaza alvarado caseros 1895</p>
           <p> Pasa a ver nuestros productos !!</p>
