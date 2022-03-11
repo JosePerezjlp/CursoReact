@@ -7,7 +7,7 @@ const Nosotros = () => {
               		
         <div>
           <h3>Red Activa</h3>
-          <p> Somos una Local de tecnologia situada en Salta</p>
+          <p> Somos un local con accesorios de tecnologia situada en Salta</p>
           <p> Capital, frente a la plaza alvarado caseros 1895</p>
           <p> Pasa a ver nuestros productos !!</p>
           <p> llama para consultas a 4456487 </p>

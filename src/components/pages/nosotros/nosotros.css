@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 90px;
 }
 .contenedorInfo h3{
     text-transform: uppercase;

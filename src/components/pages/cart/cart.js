@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Cart = () => {
 	const { art,setArt,removeItem} = useContext(ArticuloContext);
-	console.log(art)
+	//console.log(art)
 	let precioTotal = art.reduce((total,item)=> total +(item.cantidad*item.precio),0)
 	return (
 		<div >
