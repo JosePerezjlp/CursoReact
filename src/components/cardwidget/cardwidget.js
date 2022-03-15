@@ -1,11 +1,14 @@
 import { useContext } from "react";
-import { ArticuloContext } from "../../cardcontext/cardcontext"
+import { ArticuloContext } from "../../cardcontext/cardcontext";
 
-const CardWidget = () =>{
-const {cantidadItems} = useContext(ArticuloContext)
-    return (
-            <button ><i className="fa-solid fa-cart-shopping"></i>{cantidadItems()} </button>
-         )
-}
+const CardWidget = () => {
+  const { cantidadItems } = useContext(ArticuloContext);
+  return (
+    <button>
+      <i className="fa-solid fa-cart-shopping"></i>
+      {cantidadItems()}{" "}
+    </button>
+  );
+};
 
 export default CardWidget;

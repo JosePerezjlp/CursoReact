@@ -1,7 +1,13 @@
 .cart{
     margin: 10px;
     border:1.5px solid rgb(0, 205, 0);
-    margin-right: 960px;
+    margin-right: 20px;
+}
+.itemsCart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    column-gap: 100px;
 }
 img{
     width: 200px;
@@ -11,7 +17,7 @@ img{
 .btn1{
     font-size: 20px;
     color: red;
-    margin-left: 20px;
+    margin-left: 90px;
 }
 .btnFinalizar{
     border-radius: 4px;
