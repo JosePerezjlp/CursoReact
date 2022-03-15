@@ -16,7 +16,7 @@ const Cart = () => {
       {art.length > 0 ? (
         art.map((item) => {
           return (
-            <div>
+            
               <div className="cart" key={item.id}>
                 <div className="itemsCart">
                   <div>
@@ -40,17 +40,22 @@ const Cart = () => {
                   </div>
                 </div>
               </div>
-              {art && (
-                <div>
-                  <p>precio total:${precioTotal} </p>
+          );
+        })
+      ) : (
+        <CarritoVacio />
+      )}
+      {art.length > 0 && (
+                <div className="precioTotal">
+                  <p>Precio total:${precioTotal} </p>
                 </div>
               )}
-              {art && (
+              {art.length >0 && (
                 <button className="btnVaciar" onClick={() => setArt([])}>
                   Vaciar Carrito
                 </button>
               )}
-              {art && (
+              {art.length > 0 && (
                 <Link
                   to={"/finalizarcompra"}
                   style={{ textDecoration: "none" }}
@@ -61,12 +66,7 @@ const Cart = () => {
                   </button>{" "}
                 </Link>
               )}
-            </div>
-          );
-        })
-      ) : (
-        <CarritoVacio />
-      )}
+            
     </div>
   );
 };
