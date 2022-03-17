@@ -4,7 +4,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../../firebase/firebaseConfig";
 import MsjFinalizado from "../../msjfinalizado/msjfinalizado";
 import TextField from "@mui/material/TextField";
-
+import { Button } from "@mui/material";
 const initialState = {
   name: "",
   lastName: "",
@@ -82,8 +82,16 @@ const FinalizarCompra = () => {
           name="Address"
           onChange={handleOnChange}
         />
-        <button className="btnFinish">Enviar</button>
       </form>
+      <Button
+        color="success"
+        variant="contained"
+        size="small"
+        style={{ marginLeft: 575, paddingRight: 30, paddingLeft: 30 }}
+        className="btnFinish"
+      >
+        Enviar
+      </Button>
       {numId && <MsjFinalizado numId={numId} />}
     </div>
   );

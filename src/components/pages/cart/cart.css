@@ -19,29 +19,12 @@ img{
     color: red;
     margin-left: 90px;
 }
-.btnFinalizar{
-    border-radius: 4px;
-    margin-left: 30px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: rgb(0, 204, 0);
-    font-weight: bold;
-}
-.btnVaciar{
-    border-radius: 4px;
-    margin-left: 480px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: rgb(204, 204, 0);
-    font-weight: bold;
-}
+
 .btnFinalizar:hover{
     color:blue;
-    background-color: rgb(0, 255, 0);
 }
 .btnVaciar:hover{
-    color:blue;
-    background-color: rgb(255, 255, 51);
+    color: yellow;
 }
 .btnVacio{
     display:flex;

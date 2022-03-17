@@ -6,7 +6,7 @@ import ItemCount from "../itemcount/itemcount";
 import { Link } from "react-router-dom";
 import { ArticuloContext } from "../../cardcontext/cardcontext";
 import "../itemdetail/itemdetail.css";
-
+import { Button } from "@mui/material";
 const ItemDetail = ({ item }) => {
   const [render, setRender] = useState(true);
   const { addItem } = useContext(ArticuloContext);
@@ -38,17 +38,14 @@ const ItemDetail = ({ item }) => {
         {render ? (
           <ItemCount onAdd={onAdd} stock={item.stock} />
         ) : (
-          <Link to={"/cart"}>
-            <button
-              className="finish"
-              style={{
-                backgroundColor: "cyan",
-                marginLeft: 150,
-                marginBottom: 3,
-              }}
-            >
+          <Link
+            to={"/cart"}
+            className="finish"
+            style={{ textDecoration: "none" }}
+          >
+            <Button color="success" variant="contained" size="small">
               Terminar Compra{" "}
-            </button>
+            </Button>
           </Link>
         )}
       </Card>
