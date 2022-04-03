@@ -39,6 +39,7 @@ const MenuCategorias = () => {
         <span>C</span>ategorias
       </Button>
       <Menu
+        className="menuNavC"
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}

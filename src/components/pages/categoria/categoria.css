@@ -6,3 +6,77 @@
     padding-left: 40px;
     text-decoration: none;    
 }
+
+@media screen and (min-width:300px) and (max-width:399px){
+    .cat{
+        
+        grid-template-columns: 270px;
+        margin-left:4px
+    }
+    .imgCat{
+        margin-left: 20px;    }
+}
+@media screen and (min-width:390px){
+    .cat{
+        margin-left: 25px;
+    }
+} 
+@media screen and (min-width:400px) and (max-width:499px){
+    .cat{
+        
+        grid-template-columns: 270px;
+        margin-left:38px
+    }
+    .imgCat{
+        margin-left: 20px;    }
+}
+@media screen and (min-width:600px) and (max-width:699px){
+    .cat{
+        
+        grid-template-columns: 270px 270px;
+        margin-left:-15px
+    }
+    .imgCat{
+        margin-left: 20px;   
+    }
+}
+@media screen and (min-width:700px) and (max-width:799px){
+    .cat{
+        
+        grid-template-columns: 270px 270px;
+        margin-left:35px
+    }
+    .imgCat{
+        margin-left: 20px;   
+    }
+}
+@media screen and (min-width:800px) and (max-width:899px){
+    .cat{
+        
+        grid-template-columns: 270px 270px;
+        margin-left:100px
+    }
+    .imgCat{
+        margin-left: 20px;   
+    }
+}
+@media screen and (min-width:900px) and (max-width:999px){
+    .cat{
+        grid-template-columns: 270px 270px;
+        margin-left:120px
+    }
+    .imgCat{
+        margin-left: 20px;   
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1099px){
+    .cat{
+        
+        grid-template-columns: 270px 270px 270px;
+        margin-left:10px;
+        gap: 40px;
+    }
+    .imgCat{
+        margin-left: 20px;   
+    }
+}

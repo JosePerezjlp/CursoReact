@@ -39,3 +39,108 @@
     margin-right: 100px;
     color: grey;
 }
+@media screen and (min-width:300px) and (max-width:399px){
+    .footer i {
+      margin-left: 20px;
+      
+    }
+    .contenedorPagos{
+        margin-right: auto;
+        margin-left: 140px;
+    } 
+    .div1,.div2,.div3{
+        margin-left: -100px;
+        padding-right: 15px;
+    }   
+}
+@media screen and (min-width:400px) and (max-width:500px){
+    .footer i {
+      margin-left: 20px;  
+    }
+    .contenedorPagos{
+        margin-right: auto;
+        margin-left: 160px;
+    } 
+    .div1,.div2,.div3{
+        margin-left: -100px;
+        padding-right: 20px;
+    }   
+}
+@media screen and (min-width:500px) and (max-width:600px){
+    .footer i {
+        margin-left: 40px;
+    }
+    .contenedorPagos{
+        margin-right: auto;
+        margin-left: 120px;
+    } 
+    .div1,.div2,.div3{
+        margin-left: -80px;
+        padding-right: 20px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:699px){
+    .footer i {
+        margin-left: 60px;
+    }
+    .contenedorPagos{
+        margin-right: auto;
+        margin-left: 120px;
+    } 
+    .div1,.div2,.div3{
+        margin-left: -80px;
+        padding-right: 20px;
+    }
+}
+@media screen and (min-width:700px) and (max-width:799px){
+    .footer i {
+        margin-left: 80px;
+    }
+    .contenedorPagos{
+        margin-right: auto;
+        margin-left: 120px;
+    } 
+    .div1,.div2,.div3{
+        margin-left: -100px;
+        padding-right: 20px;
+    }
+}
+@media screen and (min-width:800px) and (max-width:899px){
+    .footer i {
+        margin-left: 70px;
+    }
+    .contenedorPagos{
+        margin-right: auto;
+        margin-left: 120px;
+    } 
+    .div1,.div2,.div3{
+        margin-left: -60px;
+        padding-right: 20px;
+    }
+}
+@media screen and (min-width:900px) and (max-width:999px){
+    .footer i {
+        margin-left: 90px;
+    }
+    .contenedorPagos{
+        margin-right: auto;
+        margin-left: 120px;
+    } 
+    .div1,.div2,.div3{
+        margin-left: -40px;
+        padding-right: 20px;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1099px){
+    .footer i {
+        margin-left: 110px;
+    }
+    .contenedorPagos{
+        margin-right: auto;
+        margin-left: 120px;
+    } 
+    .div1,.div2,.div3{
+        margin-left: -40px;
+        padding-right: 20px;
+    }
+}

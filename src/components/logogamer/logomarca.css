@@ -5,3 +5,80 @@
 .logoGamer img{
     width: 900px;
 }
+
+@media screen and (min-width:300px) and (max-width:399px){
+    .logoGamer{
+        margin-top: 20px;
+        margin-left: -20px;
+    }
+    .logoGamer img{
+             width: 320px;
+ }
+}
+@media screen and (min-width:390px) {
+    .logoGamer{
+        margin-left: -2px;
+    }
+}
+@media screen and (min-width:400px) and (max-width:500px){
+    .logoGamer{
+        margin-top: 20px;
+        margin-left: -4px;
+    }
+    .logoGamer img{
+             width: 350px;
+ }
+}
+@media screen and (min-width:500px) and (max-width:599px){
+    .logoGamer{
+        margin-left:-8px;
+    }
+    .logoGamer img {
+        width: 450px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:699px){
+    .logoGamer{
+        margin-left:-16px;
+    }
+    .logoGamer img {
+        width: 550px;
+    }   
+}
+@media screen and (min-width:700px) and (max-width:799px){
+    .logoGamer{
+        margin-left:-14px;
+    }
+    .logoGamer img {
+        width: 650px;
+    }   
+}
+@media screen and (min-width:800px) and (max-width:899px){
+    .logoGamer{
+        margin-left:2px;
+    }
+    .logoGamer img {
+        width: 750px;
+    }   
+}
+@media screen and (min-width:900px) and (max-width:999px){
+    .logoGamer{
+        margin-left:6px;
+    }
+    .logoGamer img {
+        width: 800px;
+    }   
+}
+@media screen and (min-width:1000px) and (max-width:1099px){
+    .logoGamer{
+        margin-left:6px;
+    }
+    .logoGamer img {
+        width: 900px;
+    }   
+}
+@media screen and (min-width:1280px){
+    .logoGamer{
+        margin-left: 150px;
+    }
+}

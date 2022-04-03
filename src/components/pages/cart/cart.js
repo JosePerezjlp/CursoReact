@@ -48,15 +48,12 @@ const Cart = () => {
         </div>
       )}
       {art.length > 0 && (
-        <Button
-          color="error"
-          variant="contained"
+        <button
           className="btnVaciar"
-          style={{ marginLeft: 460 }}
           onClick={() => setArt([])}
         >
           Vaciar Carrito
-        </Button>
+        </button>
       )}
       {art.length > 0 && (
         <Link

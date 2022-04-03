@@ -7,7 +7,7 @@ const CarritoVacio = () => {
       <p>No agrego ningun producto al carrito</p>
       <br></br>
       <Link to={"/"} style={{ textDecoration: "none" }} >
-        <Button color="success" variant="contained" >Presione Aqui para seleccionar productos</Button>
+        <Button color="success" variant="contained" className="btnDir" >Presione Aqui para seleccionar productos</Button>
       </Link>
     </div>
   );

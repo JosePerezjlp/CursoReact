@@ -4,3 +4,46 @@
 .finish{
     margin-left: 120px;
 }
+
+@media screen and (min-width:300px) and (max-width:399px){
+    .detail{
+        margin-left: -441px;
+    }
+
+}
+
+@media screen and (min-width:400px) and (max-width:499px){
+    .detail{
+        margin-left: -430px;
+    }
+}
+@media screen and (min-width:500px) and (max-width:599px){
+    .detail{
+        margin-left: -380px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:699px){
+    .detail{
+        margin-left: -345px;
+    }
+}
+@media screen and (min-width:700px) and (max-width:799px){
+    .detail{
+        margin-left: -290px;
+    }
+}
+@media screen and (min-width:800px) and (max-width:899px){
+    .detail{
+        margin-left: -220px;
+    }
+}
+@media screen and (min-width:900px) and (max-width:999px){
+    .detail{
+        margin-left: -206px;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1099px){
+    .detail{
+        margin-left: -150px;
+    }
+}

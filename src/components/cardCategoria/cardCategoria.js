@@ -6,7 +6,7 @@ const CardCategoria = ({ data }) => {
     <div className="sss">
       <Card sx={{ maxWidth: 300, boxShadow: 10 }}>
         <CardContent>
-          <img src={data.img} alt="ss" />
+          <img className="imgCat" src={data.img} alt="ss" />
 
           <Typography gutterBottom variant="h5" component="div">
             {data.categoria} {data.marca}

@@ -9,7 +9,7 @@ const item = ({ data }) => {
         <CardContent>
           <img className="imgItem" src={data.img} alt="as" />
 
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h7" component="div">
             {data.categoria} {data.marca}
           </Typography>
           <Typography variant="body2" color="text.secondary">
